@@ -1,0 +1,32 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "authenticationType": "jwt",
+    "baseName": "notesApp",
+    "buildTool": "maven",
+    "cacheProvider": "ehcache",
+    "clientFramework": "react",
+    "clientTestFrameworks": [],
+    "clientTheme": "none",
+    "creationTimestamp": 1748437418764,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "enableHibernateCache": true,
+    "enableTranslation": false,
+    "entities": [],
+    "feignClient": null,
+    "jhipsterVersion": "8.10.0",
+    "jwtSecretKey": "NWE1OTUzZDE2OWI0ZjRjZGQ1YjIwYjA3ZjE2MjA0NzI0YTkwOGI1NTM4MWRmMDIxZDA4ZmUxZTdjZGM3YWRiNjU5OGRmNmNiMGRkMjc0YTk0NDM1ZmFiMzAwM2RhMmMzMjYzYmUyNmQ4NDY4ZGUzNDhjYzNhYzRmNWI5ODllYTY=",
+    "microfrontend": null,
+    "microfrontends": [],
+    "nativeLanguage": "en",
+    "packageName": "com.adam.assessment",
+    "prodDatabaseType": "postgresql",
+    "reactive": false,
+    "serverPort": null,
+    "serviceDiscoveryType": null,
+    "syncUserWithIdp": null,
+    "testFrameworks": [],
+    "withAdminUi": true
+  }
+}
