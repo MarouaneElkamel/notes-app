@@ -1,0 +1,41 @@
+{
+  "annotations": {
+    "changelogDate": "20250528130811"
+  },
+  "applications": "*",
+  "documentation": "The Note entity.\\nStores individual notes with content, title, and creation/last modified dates.",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "maxlength"],
+      "fieldValidateRulesMaxlength": "255"
+    },
+    {
+      "fieldName": "content",
+      "fieldType": "TextBlob"
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "lastModifiedAt",
+      "fieldType": "Instant"
+    }
+  ],
+  "name": "Note",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "tag",
+      "otherEntityRelationshipName": "note",
+      "relationshipName": "tag",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

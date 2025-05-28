@@ -1,0 +1,30 @@
+{
+  "annotations": {
+    "changelogDate": "20250528130812"
+  },
+  "applications": "*",
+  "documentation": "The Tag entity.\\nAllows categorizing notes with tags.",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique", "minlength", "maxlength"],
+      "fieldValidateRulesMaxlength": "50",
+      "fieldValidateRulesMinlength": "2"
+    }
+  ],
+  "name": "Tag",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "note",
+      "otherEntityRelationshipName": "tag",
+      "relationshipName": "note",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}
